@@ -14,12 +14,17 @@ Descripcion: Toy Story
 using System;
 class Program {
   static void Main() {
-      
+     
         int juguetesEncontrados = 0;
 
         for (int ronda = 1; ronda <= 4; ronda++)
         {
-            Console.WriteLine($"Ronda {ronda}:");
+            Console.WriteLine("Ronda de las escondidas🐱‍👤");
+            Console.WriteLine("opciones del lugar del escondite😉");
+            Console.WriteLine("1. casa");
+            Console.WriteLine("2. jardin");
+            Console.WriteLine("3. sotano");
+            Console.WriteLine("4. habitacion");
             Console.WriteLine("Ingrese la ubicación donde buscar:");
 
             string ubicacion = Console.ReadLine();
@@ -39,6 +44,12 @@ class Program {
             if (ubicacion == "sotano" || ubicacion == "Sotano")
             {
                 Console.WriteLine("¡Encontraste a Rex!");
+                juguetesEncontrados++;
+            }
+            else
+            if (ubicacion == "habitacion" || ubicacion == "habitacion")
+            {
+                Console.WriteLine("¡Encontraste a Jessie!");
                 juguetesEncontrados++;
             }
             else
