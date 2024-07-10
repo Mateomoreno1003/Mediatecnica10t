@@ -1,0 +1,29 @@
+/*
+    son variables para almacenar múltiples datos
+    
+    Los personajes de friends estan
+    organizando un evento y necesitan
+    un programa en C# para imprimir 
+    Los nombres de los asistentes.
+    Chandler, Joey, Monica, Rachel, Ross, Phoebe
+*/
+using System;
+class MiSegundoVector {
+  static void Main() {
+      
+    // declaracion y asignacion de un vector dinamico
+    string[] asistentes = {
+        "Chandler",
+        "Joey",
+        "Monica",
+        "Rachel",
+        "Ross",
+        "Phoebe"};
+        
+    /* imprimir un dato del vector de manera dinamica
+       recorrer imprimiendo del vector */
+       for (int p = 0; p < 6; p++){
+           Console.WriteLine(asistentes[p]);
+      }
+    }
+  }
