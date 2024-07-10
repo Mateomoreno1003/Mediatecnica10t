@@ -1,0 +1,21 @@
+/*
+     Un cliente solicita una mini app en consola que imprima frases
+     de forma aleatoria cada que es ejecutado
+*/
+using System;
+class MiSegundoVector {
+  static void Main() {
+      string[] frases ={
+          "Amar es mas dificil que Matar",
+          "A veces es mejor guardar silencio,sonreir y seguir adelante",
+          "Una herida de amor duele mas que una herida de muerte"
+      };
+      
+      // aleatorio
+      Random aleatorio = new Random();
+      int posicion = aleatorio.Next(0,2);
+      
+      // imprimir frase aleatoria
+      Console.WriteLine(frases[posicion]);
+  }
+}
