@@ -1,0 +1,32 @@
+/******************************************************************************
+Harry Potter necesita un programa 
+en C# para listar sus hechizos. 
+Completa el espacio en blanco 
+para mostrar los nombres de los 
+hechizos en la consola:
+*******************************************************************************/
+ 
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string[] hechizos = { "Expecto Patronum", "Wingardium Levios", "Expelliarmus" };
+        
+        Console.WriteLine("Bienvenidos a los hechizos de harry potter");
+        Console.WriteLine(" ____   ___ _____ _____ _____ ____");  
+        Console.WriteLine("|  _ | / _ |_   _|_   _| ____|  _ |"); 
+        Console.WriteLine("| |_) | | | || |   | | |  _| | |_) |");
+        Console.WriteLine("|  __/| |_| || |   | | | |___|  _ <"); 
+        Console.WriteLine("|_|    |___/ |_|   |_| |_____|_| |_|");
+
+        Console.WriteLine("Lista de hechizos de Harry Potter:");
+
+        // Hechizos listados
+        for (int i = 0; i < 3; i++)
+        {
+            Console.WriteLine(hechizos[i]);
+        }
+    }
+}
